@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./imp-dates.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <style>
+            .search-container {
+                display: flex;
+                justify-content: flex-end;
+                background-color: #ffa600;
+                
+            }
+            .search-bar {
+                padding: 10px;
+                margin-right: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 300px;
+            }
+            .search-button {
+                padding: 10px 15px;
+                background-color: #ff7300;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-right: 8px;
+            }
+            .search-button:hover {
+                background-color: #ff5100;
+                border: 1px solid black;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const searchBar = document.querySelector('.search-bar');
+                searchBar.addEventListener('keypress', function(event) {
+                    if (event.key === 'Enter') { 
+                        performSearch();
+                    }
+                });
+            });
+    
+            function performSearch() {
+                const searchTerm = document.querySelector('.search-bar').value;
+                if (searchTerm) {
+                    alert(`Searching for: ${searchTerm}`);
+                } else {
+                    alert('Please enter a search term.');
+                }
+            }
+        </script>
+    </head>
+    <header>
+        <div class="nav-bar">
+                
+                <nav id="main-nav" class="main-nav">
+                    <ul>
+                        <li class="logo">
+                            <a href="index.html">
+                                <img src="Sources/Mayhem.png" alt="mayhem"></a>
+                        </li>
+                        <li class="home-button">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="albums-button">
+                            <a href="albums.html">Albums</a>
+                        </li>
+                        <li class="modifications-button">
+                            <a href="modifications.html">Modifications</a>
+                        </li>
+                        <li class="important-dates-button">
+                            <a href="imp-dates.html">Important Dates</a>
+                        </li>
+                        <!--<div id="login-createacc" class="login-createacc">-->
+                                <li class="login-button">
+                                    <a id="login-button" href="signin.html">Log in</a></li>
+                                <li class="createacc-button">
+                                    <a id="createacc-button" href="createacc.html">Create Account</a></li>
+                        <!--</div>-->
+                    </ul>  
+                </nav>                
+                
+        </div>
+    </header>
+    <section class="background-image">
+        <h1 class="outlined-header">Important Dates</h1>
+    </section>
+    <body>
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Enter your search...">
+            <button class="search-button" onclick="performSearch()">Search</button>
+        </div>
+    </body>
+</html>
