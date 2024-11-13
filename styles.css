@@ -55,7 +55,7 @@ header {
 
 .outlined-header {
    position: absolute; /* Use absolute positioning */
-    top: 30%; /* Move to the middle of the container */
+    top: 50%; /* Move to the middle of the container */
     left: 50%; /* Move to the middle of the container */
     transform: translate(-50%, -50%); /* Center the element */
     background-color: rgba(255, 102, 0, 0.6);
