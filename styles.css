@@ -10,83 +10,65 @@ body {
     background: #252525;
     width: 100vw;
 }
- .nav-bar {
-    display: flex;
-    background-color: #ffa600;
-    width: 100%;
- }
-.logo {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    background-color: #ffa600;
-   
+
+header {
+   background-color: rgba(255, 166, 0); /* Set a semi-transparent background color */
 }
 
- .main-nav {
-    background-color: #ffa600;
-    
- }
-
- nav.main-nav ul li {
-    list-style-type: none;
-    display: inline;
-    height: 100%;
- }
-
- nav ul li a {
-    text-decoration: none;
-    color:#252525;
-    font-weight: 800;
-    vertical-align: middle;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-size: 1.1em;
-          
- }
-
- .login-button, .createacc-button {
-   margin-left: 55vw;
-   
- }
-
- .createacc-button {
-   margin-left: 1vw;
- }
-
- nav ul li:not(:first-child) a:hover {
-    border: 2px solid magenta;
-    border-radius: 6px;
-    background-color: #ff7300;
-    color: #000;
-    padding: 20px 5px 20px 5px;
-    font-size: 1.2em;
- }
-
-
- .background-image {
-    background-image: url('src/wallpaper.jpg');
-    background-size: cover;
-    background-position-y: -250px;
-    height: 400px;
+ .nav-bar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2em;
-    font-weight:bolder;
-    text-shadow: -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    padding: 10px 20px;
+ }
+
+.nav-bar-left, .nav-bar-right {
+   display: flex;
+   align-items: center;
+}
+
+.nav-left img.logo {
+   height: 20px;
+   margin-right: 15px;
+}
+
+.nav-bar-left a, .nav-bar-right a {
+   color: #fff;
+   text-decoration: none;
+   padding: 10px 25px;
+   transition: backgroung-color 0.3s;
+}
+
+.nav-bar-left a:hover, .nav-bar-right a:hover {
+   background-color: #ff5100;
+   border-radius: 20px;
+}
+
+.background-image {
+   background-image: url('src/wallpaper.jpg');
+   background-size: cover;
+   background-position-y: -150px;
+   height: 500px;
+   position: relative;
 
  }
 
 .outlined-header {
+   position: absolute; /* Use absolute positioning */
+    top: 30%; /* Move to the middle of the container */
+    left: 50%; /* Move to the middle of the container */
+    transform: translate(-50%, -50%); /* Center the element */
     background-color: rgba(255, 102, 0, 0.6);
-    padding: 5px;
+    padding: 10px 20px; /* Adjust padding as needed */
     border-radius: 10px;
-    display: inline-block;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center; /* Center the text */
+    text-shadow: -1px -1px 0 #000,  
+                 1px -1px 0 #000,
+                 -1px 1px 0 #000,
+                 1px 1px 0 #000;
+   
 }
-
