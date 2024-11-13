@@ -27,9 +27,12 @@ header {
    display: flex;
    align-items: center;
    background-color: rgba(85, 85, 85, 0.5);
+   border-radius: 20px;
 }
 
-
+.nav-bar-right {
+   padding: 14.5px 0px;
+}
 
 .nav-left img.logo {
    height: 20px;
