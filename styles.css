@@ -65,7 +65,7 @@ body {
 
 
  .background-image {
-    background-image: url('Sources/wallpaper.jpg');
+    background-image: url('src/wallpaper.jpg');
     background-size: cover;
     background-position-y: -250px;
     height: 400px;
