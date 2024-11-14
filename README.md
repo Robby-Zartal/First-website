@@ -1,8 +1,8 @@
 My first "project"
 The idea is to create a online photo album for my gf and I. Only people with accounts can view most of the content. If you visit without an account you can only see a select few photos. 
 Speaking of accounts I want multiple tiers:
-Tier 1 - full access and ability to upload, delete and change which album photos are in. Also have the ability to set visibility of some photos/albums depending on other person's account tier
-Tier 2 - view photos made accessible by tier 1 users. No way of uploading, deleting or modifying photo locations
+- Tier 1 - full access and ability to upload, delete and change which album photos are in. Also have the ability to set visibility of some photos/albums depending on other person's account tier
+- Tier 2 - view photos made accessible by tier 1 users. No way of uploading, deleting or modifying photo locations
 
 The idea is to have a landing page with a preview section showing recently added photos
 An albums page containing the various albums
