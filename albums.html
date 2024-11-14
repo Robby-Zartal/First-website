@@ -5,13 +5,13 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./albums.css">
+        <link rel="stylesheet" href="./styles.css">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
         <style>
             .search-container {
                 display: flex;
                 justify-content: flex-end;
-                background-color: #ffa600;
+                background-color: rgba(255, 166, 0);
                 
             }
             .search-bar {
@@ -55,45 +55,31 @@
             }
         </script>
     </head>
-    <header>
-        <div class="nav-bar">
-                
-                <nav id="main-nav" class="main-nav">
-                    <ul>
-                        <li class="logo">
-                            <a href="index.html">
-                                <img src="Sources/Mayhem.png" alt="mayhem"></a>
-                        </li>
-                        <li class="home-button">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="albums-button">
-                            <a href="albums.html">Albums</a>
-                        </li>
-                        <li class="modifications-button">
-                            <a href="modifications.html">Modifications</a>
-                        </li>
-                        <li class="important-dates-button">
-                            <a href="imp-dates.html">Important Dates</a>
-                        </li>
-                        <!--<div id="login-createacc" class="login-createacc">-->
-                                <li class="login-button">
-                                    <a id="login-button" href="signin.html">Log in</a></li>
-                                <li class="createacc-button">
-                                    <a id="createacc-button" href="createacc.html">Create Account</a></li>
-                        <!--</div>-->
-                    </ul>  
-                </nav>                
-                
-        </div>
-    </header>
-    <section class="background-image">
-        <h1 class="outlined-header">Albums</h1>
-    </section>
     <body>
+        <header>
+            <section class="background-image">           
+                <nav id="nav-bar" class="nav-bar">
+                    <div class="nav-bar-left">
+                        <a href="index.html">
+                            <img src="src/Mayhem.png" alt="mayhem" class="logo"></a>
+                        <a href="index.html">Home</a>
+                        <a href="albums.html">Albums</a>
+                        <a href="modifications.html">Modifications</a>
+                        <a href="imp-dates.html">Important Dates</a>
+                    </div>
+                    <div class="nav-bar-right">
+                        <a id="login-button" href="signin.html">Log in</a>
+                        <a id="createacc-button" href="createacc.html">Create Account</a>
+                    </div> 
+                </nav>                
+        
+                <h1 class="outlined-header">Welcome to Mayhem 2.0</h1>
+            </section>
+        </header>
         <div class="search-container">
             <input type="text" class="search-bar" placeholder="Enter your search...">
             <button class="search-button" onclick="performSearch()">Search</button>
         </div>
+        <h2 class="recently-viewed">Recently Viewed</h2>
     </body>
 </html>

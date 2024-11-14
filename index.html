@@ -6,35 +6,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        <style>
-            .search-container {
-                display: flex;
-                justify-content: flex-end;
-                background-color: rgba(255, 166, 0);
-                
-            }
-            .search-bar {
-                padding: 10px;
-                margin-right: 10px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                width: 300px;
-            }
-            .search-button {
-                padding: 10px 15px;
-                background-color: #ff7300;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                margin-right: 8px;
-            }
-            .search-button:hover {
-                background-color: #ff5100;
-                border: 1px solid black;
-            }
-        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const searchBar = document.querySelector('.search-bar');
@@ -80,6 +54,6 @@
             <input type="text" class="search-bar" placeholder="Enter your search...">
             <button class="search-button" onclick="performSearch()">Search</button>
         </div>
-        <h2 class="recently-viewed">Recently Viewed</h2>
+        <h2 class="preview">Preview...</h2>
     </body>
 </html>
