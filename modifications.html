@@ -42,6 +42,7 @@
             <a class="nav-button" href="albums.html">Albums</a>
             <a class="nav-button" href="modifications.html">Modifications</a>
             <a class="nav-button" href="imp-dates.html">Important Dates</a>
+            <a class="nav-button" href="upload.html">Upload</a>
           </div>
           <div class="nav-bar-right">
             <a class="login-button" id="login-button" href="signin.html">Log in</a>
@@ -50,11 +51,16 @@
         </nav>
       </div>
     </section>
-      <h1 class="outlined-header">Modifications</h1>
+      <h1 class="outlined-header2">Modifications</h1>
   </header>
   <div class="search-container">
     <input type="text" class="search-bar" placeholder="Enter your search..." />
     <button class="search-button" onclick="performSearch()">Search</button>
   </div>
   <h2 class="preview">Preview...</h2>
+  <div class="photo-preview-container">
+    <input type="file" id="file-input" multiple accept="image/*">
+    <div class="preview-area" id="preview-area"></div>
+  </div>
+  <script src="photo-preview.js"></script>
 </body>
