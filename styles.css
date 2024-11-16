@@ -140,3 +140,28 @@ body {
 .nav-button[aria-current="page"] {
   background-color: red;
 }
+
+.upload-container {
+  text-align: center;
+}
+
+input[type="file"] {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
