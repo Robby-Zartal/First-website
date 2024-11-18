@@ -3,7 +3,7 @@ document.getElementById('upload-form').addEventListener('submit', function(event
 
     const formData = new FormData(this);
 
-    fetch('/upload.php', {
+    fetch('https://github.com/Robby-Zartal/First-website/blob/main/upload.php', {
         method: 'POST',
         body: formData
     })
