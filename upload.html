@@ -60,12 +60,13 @@
   <h2 class="preview">Preview...</h2>
   <div class="upload-container">
     <h2>Upload Container</h2>
-    <form id="upload-form" method="POST" enctype="multipart/form-data">
-      <input type="file" id="file-input" name="file" accept="image/*" required>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+      <label for="file-upload">Choose a photo:</label>
+      <input type="file" id="file-upload" name="file" accept="image/*" required>
       <button type="submit">Upload</button>
-    </form>
+  </form>
     <div id="message"></div>
   </div>
-  <script src="upload.js"></script>
+  
 </body>
 </html>
