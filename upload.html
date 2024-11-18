@@ -51,11 +51,21 @@
         </nav>
       </div>
     </section>
-      <h1 class="outlined-header2">Modifications</h1>
+      <h1 class="outlined-header2">Upload</h1>
   </header>
   <div class="search-container">
     <input type="text" class="search-bar" placeholder="Enter your search..." />
     <button class="search-button" onclick="performSearch()">Search</button>
   </div>
   <h2 class="preview">Preview...</h2>
+  <div class="upload-container">
+    <h2>Upload Container</h2>
+    <form id="upload-form" method="POST" enctype="multipart/form-data">
+      <input type="file" id="file-input" name="file" accept="image/*" required>
+      <button type="submit">Upload</button>
+    </form>
+    <div id="message"></div>
+  </div>
+  <script src="upload.js"></script>
 </body>
+</html>
