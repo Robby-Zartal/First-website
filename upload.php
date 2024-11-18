@@ -20,17 +20,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (in_array($fileType, $allowedTypes)) {
             // Move the uploaded file to the designated directory
             if (move_uploaded_file($_FILES['file']['tmp_name'], $filePath)) {
-                echo "File uploaded successfully: " . htmlspecialchars($fileName);
+                echo json_encode(['status' => 'success', 'message' => "File uploaded successfully: " . htmlspecialchars($fileName)]);
             } else {
-                echo "Error uploading the file.";
+                echo json_encode(['status' => 'error', 'message' => "Error uploading the file."]);
             }
         } else {
-            echo "Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed.";
+            echo json_encode(['status' => 'error', 'message' => "Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed."]);
         }
     } else {
-        echo "No file was uploaded or there was an upload error.";
+        echo json_encode(['status' => 'error', 'message' => "No file was uploaded or there was an upload error."]);
     }
 } else {
-    echo "Invalid request method.";
+    echo json_encode(['status' => 'error', 'message' => "Invalid request method."]);
 }
 ?>
